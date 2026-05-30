@@ -1,0 +1,21 @@
+flowchart TD
+    A[Exposure or control concern identified] --> B[Public-safe intake]
+    B --> C[Classify exposure domain and affected workflow]
+    C --> D{Material ambiguity?}
+    D -- No --> E[Record as watch item with owner and evidence note]
+    D -- Yes --> F[Build exposure register entry]
+    F --> G[Map control owners and decision rights]
+    G --> H[Review evidence availability]
+    H --> I{Evidence sufficient?}
+    I -- No --> J[Create evidence gap and remediation action]
+    I -- Yes --> K[Record evidence reference and confidence level]
+    J --> L[Remediation tracker]
+    K --> L
+    L --> M{Exception or unresolved decision?}
+    M -- Yes --> N[Exception log and escalation path]
+    M -- No --> O[Controls and exposure governance package]
+    N --> O
+    O --> P[Executive decision brief]
+    O --> Q[PMO action and follow-through log]
+    P --> R[Executive Portfolio Review Pack Builder]
+    Q --> S[PMO Governance Operations Log]

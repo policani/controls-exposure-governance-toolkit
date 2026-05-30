@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Sample Output - Controls Exposure Governance Toolkit</title><style>
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:32px;max-width:1100px;color:#202124}h1,h2,h3{color:#111827}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{border:1px solid #d1d5db;padding:8px;vertical-align:top}th{background:#f3f4f6;text-align:left}.note{background:#f9fafb;border-left:4px solid #6b7280;padding:12px;margin:16px 0}.badge{display:inline-block;border:1px solid #9ca3af;border-radius:999px;padding:2px 8px;margin:2px;font-size:12px}.small{font-size:13px;color:#4b5563}code{background:#f3f4f6;padding:2px 4px;border-radius:4px}
+</style></head><body>
+<h1>Sample Output</h1>
+<p class="small">Synthetic dummy output for demonstration. This is not legal, compliance, audit, finance, accounting, privacy, or security advice.</p>
+<h2>Situation framing</h2>
+<p>Northstar Home Services has inherited supplier, billing, and partner-reimbursement exposure across three acquired platforms. Current notes suggest inconsistent evidence practices, fragmented ownership, unreconciled manual billing adjustments, and reimbursement payments made before supporting evidence was attached. The estimated exposure range of $250K-$900K is unconfirmed and requires owner validation. The immediate governance need is to make exposure, controls, evidence, remediation, exceptions, and escalation paths visible before the integration steering committee.</p>
+<h2>Exposure register</h2>
+<table><tr><th>ID</th><th>Exposure</th><th>Affected workflow</th><th>Type</th><th>Materiality signal</th><th>Control state</th><th>Evidence state</th><th>Owner</th><th>Decision needed</th><th>Status</th></tr>
+<tr><td>EXP-001</td><td>Supplier service credit tracking differs by platform.</td><td>Supplier invoice validation</td><td>Supplier / financial exposure</td><td>Dollar range unknown; recurring supplier process.</td><td>Inconsistent</td><td>Partial</td><td>Supplier Governance Lead / Finance Ops Lead</td><td>Confirm control owner and source of record.</td><td>Open</td></tr>
+<tr><td>EXP-002</td><td>Partner reimbursement claims paid before evidence attachment.</td><td>Partner reimbursement</td><td>Reimbursement control gap</td><td>Included in unconfirmed $250K-$900K range.</td><td>Weak or unverified</td><td>Missing for some claims</td><td>Finance Ops Lead</td><td>Decide whether to pause, sample, or require retroactive evidence.</td><td>Pending decision</td></tr>
+<tr><td>EXP-003</td><td>Manual billing adjustment queue not reconciled since acquisition close.</td><td>Billing adjustments</td><td>Billing / data integrity exposure</td><td>Aging and unreconciled queue.</td><td>Unclear</td><td>Not yet requested</td><td>Platform Operations Lead</td><td>Confirm reconciliation owner and timing.</td><td>Open</td></tr>
+</table>
+<h2>Control owner map</h2>
+<table><tr><th>Exposure ID</th><th>Process owner</th><th>Control owner</th><th>Evidence owner</th><th>Remediation owner</th><th>Decision owner</th><th>Sponsor</th><th>Ownership gap</th></tr>
+<tr><td>EXP-001</td><td>Supplier Governance Lead</td><td>Unconfirmed: Procurement or Finance Ops</td><td>Supplier Governance Lead</td><td>Integration PMO Lead</td><td>COO delegate</td><td>COO delegate</td><td>Contract ownership and operational validation are split.</td></tr>
+<tr><td>EXP-002</td><td>Finance Ops Lead</td><td>Finance Ops Lead</td><td>Platform Operations Lead</td><td>Finance Ops Lead</td><td>Finance controller role required</td><td>COO delegate</td><td>Payment continuation criteria are unclear.</td></tr>
+<tr><td>EXP-003</td><td>Platform Operations Lead</td><td>Unconfirmed</td><td>Platform Operations Lead</td><td>Platform Operations Lead</td><td>Integration steering committee</td><td>COO delegate</td><td>No confirmed reconciliation owner.</td></tr>
+</table>
+<h2>Evidence register</h2>
+<table><tr><th>Evidence ID</th><th>Exposure ID</th><th>Evidence</th><th>Source</th><th>Owner</th><th>Confidence</th><th>Limitation</th><th>Gap</th></tr>
+<tr><td>EVD-001</td><td>EXP-001</td><td>Supplier credit spreadsheet and BeaconBill extracts.</td><td>Legacy platform exports</td><td>Supplier Governance Lead</td><td>Medium</td><td>Two sources with inconsistent control paths.</td><td>Need source-of-record confirmation.</td></tr>
+<tr><td>EVD-002</td><td>EXP-002</td><td>Claim list with missing attachments.</td><td>Partner reimbursement queue</td><td>Finance Ops Lead</td><td>Low</td><td>Population completeness not validated.</td><td>Need sample criteria and retroactive evidence request.</td></tr>
+<tr><td>EVD-003</td><td>EXP-003</td><td>Manual billing adjustment queue aging report.</td><td>ChannelBridge queue export</td><td>Platform Operations Lead</td><td>Low</td><td>Reconciliation status not available.</td><td>Need last reconciliation date and owner.</td></tr>
+</table>
+<h2>Remediation tracker</h2>
+<table><tr><th>Action ID</th><th>Exposure ID</th><th>Action</th><th>Owner</th><th>Due</th><th>Dependency</th><th>Evidence needed</th><th>Status</th></tr>
+<tr><td>ACT-001</td><td>EXP-001</td><td>Confirm source of record for supplier service credits.</td><td>Supplier Governance Lead</td><td>TBD</td><td>Procurement and Finance Ops review</td><td>Documented owner decision</td><td>Pending owner validation</td></tr>
+<tr><td>ACT-002</td><td>EXP-002</td><td>Create sample of paid reimbursement claims missing attachments.</td><td>Finance Ops Lead</td><td>TBD</td><td>Platform export</td><td>Sample file and attachment status</td><td>Not started</td></tr>
+<tr><td>ACT-003</td><td>EXP-003</td><td>Produce billing adjustment queue reconciliation plan.</td><td>Platform Operations Lead</td><td>TBD</td><td>Queue owner confirmation</td><td>Plan and aging population</td><td>Blocked</td></tr>
+</table>
+<h2>Exception log</h2>
+<table><tr><th>Exception ID</th><th>Exposure ID</th><th>Exception</th><th>Reason</th><th>Approver needed</th><th>Review date</th><th>Status</th></tr>
+<tr><td>EXC-001</td><td>EXP-002</td><td>Payments may have been made before evidence attachment.</td><td>Legacy workflow allowed pre-evidence processing.</td><td>Finance controller role</td><td>Next steering committee</td><td>Proposed for review</td></tr>
+<tr><td>EXC-002</td><td>EXP-003</td><td>Billing adjustment queue lacks confirmed reconciliation since acquisition close.</td><td>Owner transition incomplete.</td><td>Integration steering committee</td><td>Next steering committee</td><td>Open</td></tr>
+</table>
+<h2>Escalation path and handoffs</h2>
+<table><tr><th>Item</th><th>Trigger</th><th>Decision needed</th><th>Recommended owner role</th><th>Handoff</th></tr>
+<tr><td>Payment continuation criteria</td><td>Reimbursement claims paid without complete evidence.</td><td>Pause, sample, continue with monitoring, or require retroactive evidence.</td><td>Finance controller role</td><td>Executive Portfolio Review Pack Builder</td></tr>
+<tr><td>Reconciliation ownership</td><td>Billing queue aging with no confirmed reconciliation owner.</td><td>Name owner and review date.</td><td>Integration steering committee</td><td>PMO Governance Operations Log</td></tr>
+<tr><td>Supplier credit source of record</td><td>Conflicting platform practices.</td><td>Confirm source of record and control owner.</td><td>Procurement / Finance Ops leadership</td><td>PMO Governance Operations Log</td></tr>
+</table>
+<h2>Assumptions requiring human confirmation</h2>
+<ul><li>The $250K-$900K range is unconfirmed.</li><li>Named roles are placeholders and must be validated.</li><li>No compliance, audit, accounting, legal, privacy, or security determination has been made.</li><li>Closure requires accountable human review.</li></ul>
+</body></html>

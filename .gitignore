@@ -1,0 +1,22 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local output
+out/
+dist/
+build/
+*.zip
+
+# Python/cache
+__pycache__/
+*.pyc
+.venv/
+
+# Sensitive local working material
+*.local.*
+*.private.*
+secrets.*
+.env
