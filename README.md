@@ -179,6 +179,10 @@ The ChatGPT runtime is a flat folder with 15 Markdown files. There are no nested
 
 This toolkit supports intake, classification, synthesis, evidence review, routing, drafting, and quality review. Humans remain accountable for legal, compliance, security, privacy, audit, finance, accounting, risk acceptance, funding, supplier, stakeholder, and executive decisions.
 
+## License
+
+Source code and scripts are licensed under MIT. Documentation, prompts, templates, examples, and other non-code materials are licensed under CC BY 4.0 with attribution to Marco Policani. See `LICENSE.md`.
+
 ## Search keywords
 
 PMO governance, portfolio governance, controls exposure, risk register, exposure register, control owner map, remediation tracker, exception log, evidence register, audit readiness, supplier remediation, reimbursement controls, financial exposure, compliance operations, executive escalation, ChatGPT Project, AI-assisted governance, human-governed AI.
